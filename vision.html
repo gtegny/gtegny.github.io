@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Geoffrey Tegny - Computer vision projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+					<style>
+						.projects {
+							display: flex;
+							flex-direction: column;
+							border: solid 1px lightgray;
+							padding: 0 9rem;
+							border-radius: 10px;
+							margin-bottom: 5rem;
+							min-width: 355px;
+						}
+					
+						.projects>header {
+							margin-top: 2rem;
+						}
+					
+						@media screen and (max-width: 980px) {
+							.projects {
+								padding: 0 3rem;
+							}
+						}
+					</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Geoffrey Tegny</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="robotics.html">Robotics projects</a></li>
+											<li><a href="vision.html">Visions projects</a></li>
+											<li><a href="building.html">Smart building/industry projects</a></li>
+											<li><a href="others.html">Others projects</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>My Computer Vision projects</h2>
+							<p>Pose detection, Action dectection, V-SLAM, Sensor fusion, Nvidia, CUDA, NeuralNetwork, Web server, C++, Python, Vue.js</p>
+						</header>
+						<section class="wrapper style5" style="padding-top: 2rem;">
+							<div class="inner">
+
+								<section class="projects">
+									<header>
+										<h2>AI vision server for robotic platform</h2>
+										<p style="margin-bottom: 0.5rem;">Private company - Busan, South Korea</p> 
+										<p style="margin-bottom: 0.5rem;"><i>2023~2024</i></p>
+										<p style="margin-bottom: 0; font-size: 0.75rem;color: darkred;"><i>limited information due to non-disclosure agreement</i></p>
+										<hr />
+									</header>
+									<p style="overflow: auto;">
+										<span class="image left" style="width: 300px;"><img src="assets/images/none.jpg" alt="Robot-Part2" /></span>
+										<br/>
+										to be completed.
+										<br />
+										<br />
+										I was the team leader and the designer of the project. 
+										I worked on all the parts from server BE and FE and vision algorithm coding.<br />
+										My team was composed of 2 developers and 3 interns.<br />
+										
+										<br />
+										<br /><br />
+										<b>Keywords:</b>
+										<br />
+										C++, Python, Vuejs, Visual SLAM, R.Pi5, Jetson Nano, Jetson Nano Orin, CUDA, RGB, RGB-D, VIO, Project manager, Notion
+									</p>
+
+									<button onclick="toggleExtraById()" style="margin-bottom: 20px; align-self: end;">Show more</button>
+
+									<div class="extra" style="display: none;">
+										<h4>Mechanical points</h4>
+										<p>to be completed.
+										</p>
+										<h4>Algorithm points</h4>
+										<p>to be completed.
+										</p>
+										<h4>Web server points</h4>
+										<p>to be completed.
+										</p>
+									</div>
+								</section>
+
+								
+
+								
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="assets/docs/Geoffrey_TEGNY-Resume_2024-Korean.pdf" target="blank"
+									class="icon solid fa-file-pdf fa-2x"><span class="label">Resume</span></a></li>
+							<li><a href="mailto:geoffrey.tegny@gmail.com" class="icon solid fa-envelope fa-2x"><span
+										class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/in/geoffreytegny" target="blank"
+									class="icon solid brands fa-linkedin-in fa-2x"><span class="label">LinkedIn</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; GeoffreyTegny</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+				const toggleExtraById = () =>{
+					let extra = event.target.parentNode.getElementsByClassName('extra')[0]
+					if (extra.style.display == "none") {
+						event.target.textContent = "Hide details"
+						extra.style.display = "block"
+
+					} else {
+						event.target.textContent = "Show more"
+						extra.style.display = "none"
+					}
+				}
+			</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+
+	</body>
+</html>
