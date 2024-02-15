@@ -79,14 +79,13 @@
 									<p style="overflow: auto;">
 										<span class="image left" style="width: 300px;"><img src="assets/images/none.jpg" alt="Robot-Part2" /></span>
 										<br/>
-										to be completed.
+										The main goal of the project is to build a standalone web server that can run several vision AI applications.
+										Combined with the developed robotic server, this controller allows Visual-SLAM.<br/>
+										This server should have a small footprint to be embedded in a robotic platform.<br/>
 										<br />
-										<br />
-										I was the team leader and the designer of the project. 
+										I am the team leader and the solution designer of the project. 
 										I worked on all the parts from server BE and FE and vision algorithm coding.<br />
 										My team was composed of 2 developers and 3 interns.<br />
-										
-										<br />
 										<br /><br />
 										<b>Keywords:</b>
 										<br />
@@ -96,18 +95,109 @@
 									<button onclick="toggleExtraById()" style="margin-bottom: 20px; align-self: end;">Show more</button>
 
 									<div class="extra" style="display: none;">
-										<h4>Mechanical points</h4>
-										<p>to be completed.
+										<h4>Hardware points</h4>
+										<p>
+											Severals architecture have been tested using controllers such as intel MiniPC (CPU), Nvidia Nano and Nano Orin but also 
+											various camera such as basic usb RGB camera, RGB-D device from Orbbec or RGB-D + IMU.<br/>
+											The server controls also a servo motor to change the camera field of view.
 										</p>
 										<h4>Algorithm points</h4>
-										<p>to be completed.
+										<p>
+											The main goal of the algorithnms was to monitoring multi-people pose and actions. 
+											For each solution, several algorithnms have been developed to best fit the controller (CPU / GPU / Nvidia).<br />
+											Severals algorithnms were developed and we are in discussion with partners / customers for adapting them to answer specific needs:<br/>
+											Multi-person trajectories tracking, dynamic multi-people pose detection, Person Of Interest tracking, multi-people action detection.<br/>
+											Finally, we implemented V-SLAM using Visual Inertial Odometry algorithm and fused it to the previous SLAM solution we developed.
 										</p>
 										<h4>Web server points</h4>
-										<p>to be completed.
+										<p>
+											The web server allows any device to connect to the server, run any algorithnms or control the camera position and change any hardware settings.<br/>
+											The different hardware settings (hardware type, serial communication) can be change directly in the UI of the server.<br />
+											The server allows the use of external video feed but also the use of external computing server in case of we need to run heavy algorithm 
+											not compatible with the embedded server.
 										</p>
 									</div>
 								</section>
 
+								<section class="projects">
+									<header>
+										<h2>Visual Odometry and Visual SLAM</h2>
+										<p style="margin-bottom: 0.5rem;">Private company - Busan, South Korea</p> 
+										<p style="margin-bottom: 0.5rem;"><i>2023~2024</i></p>
+										<p style="margin-bottom: 0; font-size: 0.75rem;color: darkred;"><i>limited information due to non-disclosure agreement</i></p>
+										<hr />
+									</header>
+									<p style="overflow: auto;">
+										<span class="image left" style="width: 300px;"><img src="assets/images/none.jpg" alt="Robot-Part2" /></span>
+										<br/>
+										This project is part of the AI vision server but is more focus on localization and navigation.
+										In this project we are implementing and testing several known solutions for the features detection, features mapping and loop closure.<br />
+										The goal of this project is to understand the existing vision solutions for localization and to create a pipeline to be used for our visual SLAM.
+										Our custom Visual SLAM is still in development, but we also implemented the existing Stella SLAM to be able to first test visual localization and navigation with our robot.
+										<br />
+										I helped 3 interns to learn about the visual algorithm, am coding with them the different solution and I am creating the global architecture with another robotic developer.<br />
+										<br /><br />
+										<b>Keywords:</b>
+										<br />
+										C++, Python, Vuejs, Visual SLAM, Jetson Nano Orin, CUDA, RGB, RGB-D, VIO, Features detection, Features mapping, Loop closure, Project manager
+									</p>
+
+									<button onclick="toggleExtraById()" style="margin-bottom: 20px; align-self: end;">Show more</button>
+
+									<div class="extra" style="display: none;">
+										<h4>Hardware points</h4>
+										<p>
+											We focus on running the algorithm on Nvida based PC then to port them on the Jetson Nano Orin.
+											We are focusing on using mono-camera, IMU and odometry data from the hub motors, but we also implement a solution with a RGB-D camera.<br/>
+										</p>
+										<h4>Algorithm points</h4>
+										<p>
+											The different code parts have been implemented in Python then in C++. We are focusing to adapt some of the libraries to use CUDA available in the Nvidia devices.<br />
+											For each solution part, different algorithm have been tested such as  FAST / HARRIS / SIFT / SURF for features dectection and ORB  for features matching, 
+											and we studied the pre-processing of the image using different filtering techniques (recoloring, edge filtering, ...).
+										</p>
+									</div>
+								</section>
+								<section class="projects">
+									<header>
+										<h2>Occupancy detection and people counting for Building management system</h2>
+										<p style="margin-bottom: 0.5rem;">TegnyTech - Busan, South Korea</p>
+										<p style="margin-bottom: 0.5rem;"><i>2023~2024</i></p>
+										<hr />
+									</header>
+									<p style="overflow: auto;">
+										<span class="image left" style="width: 300px;"><img src="assets/images/none.jpg" alt="Robot-Part2" /></span>
+										<br />
+										The main goal of the project is to build a simple server that will received video feeds from different rooms and return their 
+										occupancy states.<br />
+										The occupancy state of a room is important for building control and allows energy savings and to better control the room comfort.
+										Depending on the occupancy state, the lighting condition or even ventilation setpoints can be adjusted.
+										Comparing to traditional solutions using passive infrared, this solution allow to detect a person without a need of any motion.<br />
+										<br />
+										I am developping this server alone and integrating it in my BEMS solution to propose more solution to my partner company.<br />
+										<br /><br />
+										<b>Keywords:</b>
+										<br />
+										C++, Vuejs, R.Pi5, intel miniPC, Jetson Nano Orin, RGB, Person detection, ModbusTCP, BEMS, Energy savings
+									</p>
+								
+									<button onclick="toggleExtraById()" style="margin-bottom: 20px; align-self: end;">Show more</button>
+								
+									<div class="extra" style="display: none;">
+										<h4>Hardware points</h4>
+										<p>
+											The server can be directly installed in the BEMS computer or run into a standalone controller that is compatible with the number of video feeds.<br />
+											Video feeds can be gather by usb connection or directly from IP cameras.
+										</p>
+										<h4>Algorithm points</h4>
+										<p>
+											As speed is not important in building management, the algorithms are designed to run with low performance to reduce cost of the product.<br />
+											Severals algorithnms were developed to best fit the type of the controller where the server runs: YOLOV8, DetectNet, NeuralNetwork based.<br />
+											The algorithms were developed using office videos database such as "Edinburgh office monitoring video dataset".<br />
+											Finally, the result of the concurrent occupancy detection on different video feed are stored and can be poll by a Modbus TCP client.
+										</p>
+									</div>
+								</section>
 								
 
 								

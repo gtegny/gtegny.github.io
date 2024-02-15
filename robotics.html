@@ -126,26 +126,33 @@
 									<p style="overflow: auto;">
 										<span class="image left" style="width: 300px;"><img src="assets/images/robotp1.png" alt="Robot-Part1" /></span>
 										<br />
-										Update of previous robotic platform with the implementation of embedded web server, battery level monitoring,
-										LEDs signage, extra proximity sensors and more reliable navigation.
+										Creation of the robotic department and the 1st autonomous ground vehicle of the company.<br/>
+										Developed with 4 international interns a ROS then ROS2 based UGV with semi-auto mapping, autonomous navigation and basic person follower.<br/>
+										The robot implements 2 wheels differential drive with LiDAR based SLAM. Modeling are done in Solidworks and simulations in Gazebo.
 										<br />
 										<br />
 										<b>Keywords:</b>
 										<br />
-										dsdsd
+										LiDAR, BLDC motor, RPi4, Arduino nano, ROS, ROS2, Gazebo, AMCL, cartographer, IMU, sensor fusion, Flask, Vue.js
 									</p>
 
 									<button onclick="toggleExtraById()" style="margin-bottom: 20px; align-self: end;">Show more</button>
 
 									<div class="extra" style="display: none;">
 										<h4>Mechanical points</h4>
-										<p>to be completed.
+										<p>We used 2 hub motors with intergrated hard wheels and encoder with 2 caster wheels arranged in diamond shape.<br/>
+											The frame was designed in Solidworks and 2 frames was made: 1 in stainless steel by a workshop and I made a similar frame using 20mm aluminum profile.<br/>
+											I made all the wirings, soldering, connectors and frame cuts, and several tests were ran on site in S.Korea.
 										</p>
 										<h4>Algorithm points</h4>
-										<p>to be completed.
+										<p>
+											This solution used common ROS2 algorithm such as cartographer for mapping and amcl for navigation.<br/>
+											 A simple RGB based algorithm was developed using C++ and openCV for target tracking.
 										</p>
 										<h4>Web server points</h4>
-										<p>to be completed.
+										<p>
+											I developed a basic python based web server and Vue.js front end to run the different control algorithnms, to change some algorithm parameters 
+											and to initialize the target following mode as well as the live feed from the embedded camera.
 										</p>
 									</div>
 								</section>
