@@ -41,6 +41,9 @@
 				<!-- Header -->
 					<header id="header">
 						<h1><a href="index.html">Geoffrey Tegny</a></h1>
+						<div class="lang">
+							<a class="language" href="/kr/building.html">Korean</a>
+						</div>
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -264,10 +267,7 @@
 					</footer>
 
 			</div>
-		<div id="imgViewer" class="modal">
-			<span class="close" onclick="closeModal()">&times;</span>
-			<img class="modal-content" id="modalImg">
-		</div>
+
 		<!-- Scripts -->
 			<script>
 				const toggleExtraById = () =>{
@@ -281,22 +281,6 @@
 						extra.style.display = "none"
 					}
 				}
-				const openModal = (imageSrc) => {
-						var modal = document.getElementById("imgViewer");
-						var modalImg = document.getElementById("modalImg");
-						modal.style.display = "block";
-						modalImg.src = imageSrc;
-					}
-					const closeModal = () => {
-						var modal = document.getElementById("imgViewer");
-						modal.style.display = "none";
-					}
-					window.onclick = function (event) {
-						var modal = document.getElementById("imgViewer");
-						if (event.target == modal) {
-							modal.style.display = "none";
-						}
-					}
 			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>

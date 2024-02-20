@@ -222,10 +222,7 @@
 					</footer>
 
 			</div>
-		<div id="imgViewer" class="modal">
-			<span class="close" onclick="closeModal()">&times;</span>
-			<img class="modal-content" id="modalImg">
-		</div>
+
 		<!-- Scripts -->
 			<script>
 				const toggleExtraById = () =>{
@@ -239,22 +236,6 @@
 						extra.style.display = "none"
 					}
 				}
-				const openModal = (imageSrc) => {
-						var modal = document.getElementById("imgViewer");
-						var modalImg = document.getElementById("modalImg");
-						modal.style.display = "block";
-						modalImg.src = imageSrc;
-					}
-					const closeModal = () => {
-						var modal = document.getElementById("imgViewer");
-						modal.style.display = "none";
-					}
-					window.onclick = function (event) {
-						var modal = document.getElementById("imgViewer");
-						if (event.target == modal) {
-							modal.style.display = "none";
-						}
-					}
 			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>

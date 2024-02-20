@@ -152,11 +152,6 @@
 											In the final version, we added DeepAR filter into the camera view of the talent apps.
 										</p>
 									</div>
-									<div class="gallery">
-										<img src="assets/images/MI-maindesktop.jpg" alt="Image 1" onclick="openModal('assets/images/MI-maindesktop.jpg')">
-										<img src="assets/images/MI-talentPage.jpg" alt="Image 2" onclick="openModal('assets/images/MI-talentPage.jpg')">
-										<img src="assets/images/MI-talentApp-Requests.jpg" alt="Image 2" onclick="openModal('assets/images/MI-talentApp-Requests.jpg')">
-									</div>
 								</section>
 								
 								
@@ -183,10 +178,7 @@
 					</footer>
 
 			</div>
-		<div id="imgViewer" class="modal">
-			<span class="close" onclick="closeModal()">&times;</span>
-			<img class="modal-content" id="modalImg">
-		</div>
+
 		<!-- Scripts -->
 			<script>
 				const toggleExtraById = () =>{
@@ -200,22 +192,6 @@
 						extra.style.display = "none"
 					}
 				}
-				const openModal = (imageSrc) => {
-						var modal = document.getElementById("imgViewer");
-						var modalImg = document.getElementById("modalImg");
-						modal.style.display = "block";
-						modalImg.src = imageSrc;
-					}
-					const closeModal = () => {
-						var modal = document.getElementById("imgViewer");
-						modal.style.display = "none";
-					}
-					window.onclick = function (event) {
-						var modal = document.getElementById("imgViewer");
-						if (event.target == modal) {
-							modal.style.display = "none";
-						}
-					}
 			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>

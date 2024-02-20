@@ -125,10 +125,6 @@
 											not compatible with the embedded server.
 										</p>
 									</div>
-									<div class="gallery">
-										<img src="assets/images/Vision-BestFeatures.jpg" alt="Image 1" onclick="openModal('assets/images/Vision-BestFeatures.jpg')">
-										<img src="assets/images/Vision-PoseEstimation1.jpg" alt="Image 2" onclick="openModal('assets/images/Vision-PoseEstimation1.jpg')">
-									</div>
 								</section>
 
 								<section class="projects">
@@ -159,7 +155,7 @@
 									<div class="extra" style="display: none;">
 										<h4>Hardware points</h4>
 										<p>
-											We are running the algorithms on a Nvida based PC then to port them on the Jetson Nano Orin controller.
+											We focus on running the algorithm on Nvida based PC then to port them on the Jetson Nano Orin.
 											We are focusing on using mono-camera, IMU and odometry data from the hub motors, but we also implement a solution with a RGB-D camera.<br/>
 										</p>
 										<h4>Algorithm points</h4>
@@ -168,18 +164,6 @@
 											For each solution part, different algorithm have been tested such as  FAST / HARRIS / SIFT / SURF for features dectection and ORB  for features matching, 
 											and we studied the pre-processing of the image using different filtering techniques (recoloring, edge filtering, ...).
 										</p>
-										<div class="gallery">
-											<img src="images/pic01.jpg" alt="Image 1" onclick="openModal('images/pic01.jpg')">
-											<img src="images/pic02.jpg" alt="Image 2" onclick="openModal('images/pic02.jpg')">
-										</div>
-									</div>
-									<div class="gallery">
-										<img src="assets/images/Vision-FeaturesMatching1.jpg" alt="Features matching"
-											onclick="openModal('assets/images/Vision-FeaturesMatching1.jpg')">
-										<img src="assets/images/Vision-FeaturesTracking.jpg" alt="Features tracking"
-											onclick="openModal('assets/images/Vision-FeaturesTracking.jpg')">
-										<img src="assets/images/Vision-LoopClosure1.jpg" alt="Loop closure"
-											onclick="openModal('assets/images/Vision-LoopClosure1.jpg')">
 									</div>
 								</section>
 								<section class="projects">
@@ -220,6 +204,8 @@
 											The algorithms were developed using office videos database such as "Edinburgh office monitoring video dataset".<br />
 											Finally, the result of the concurrent occupancy detection on different video feed are stored and can be poll by a Modbus TCP client.
 										</p>
+										
+
 									</div>
 								</section>
 								
@@ -227,6 +213,7 @@
 								
 							</div>
 						</section>
+
 					</article>
 
 				<!-- Footer -->
@@ -246,10 +233,7 @@
 					</footer>
 
 			</div>
-			<div id="imgViewer" class="modal">
-				<span class="close" onclick="closeModal()">&times;</span>
-				<img class="modal-content" id="modalImg">
-			</div>
+
 		<!-- Scripts -->
 			<script>
 				const toggleExtraById = () =>{
@@ -261,22 +245,6 @@
 					} else {
 						event.target.textContent = "Show more"
 						extra.style.display = "none"
-					}
-				}
-				const openModal = (imageSrc) => {
-					var modal = document.getElementById("imgViewer");
-					var modalImg = document.getElementById("modalImg");
-					modal.style.display = "block";
-					modalImg.src = imageSrc;
-				}
-				const closeModal = ()=>{
-					var modal = document.getElementById("imgViewer");
-					modal.style.display = "none";
-				}
-				window.onclick = function (event) {
-					var modal = document.getElementById("imgViewer");
-					if (event.target == modal) {
-						modal.style.display = "none";
 					}
 				}
 			</script>
