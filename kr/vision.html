@@ -6,11 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Geoffrey Tegny - Computer vision projects</title>
+		<title>테니 제프리 - Computer vision projects</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 					<style>
 						.projects {
 							display: flex;
@@ -40,26 +40,29 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Geoffrey Tegny</a></h1>
+						<h1><a href="/kr/index.html">테니 제프리</a></h1>
+						<div class="lang">
+							<a class="language" href="/en/vision.html">English</a>
+						</div>
 						<nav id="nav">
 							<ul>
 								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<a href="#menu" class="menuToggle"><span>메뉴</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="index.html">Home</a></li>
+											<li><a href="/kr/index.html">홈</a></li>
 											<li>
-												<a href="#">Projects</a>
+												<a href="#">프로젝트</a>
 												<ul>
-													<li><a href="robotics.html">Robotics projects</a></li>
-													<li><a href="vision.html">Visions projects</a></li>
-													<li><a href="building.html">Smart building / industry projects</a></li>
-													<li><a href="others.html">Others projects</a></li>
+													<li><a href="/kr/robotics.html">로봇공학 프로젝트</a></li>
+													<li><a href="/kr/vision.html">비전 프로젝트</a></li>
+													<li><a href="/kr/building.html">스마트 빌딩/산업 프로젝트</a></li>
+													<li><a href="/kr/others.html">기타 프로젝트</a></li>
 												</ul>
-							
+									
 											</li>
-											<li><a href="profile.html">My profile</a></li>
-											<li><a href="contact.html">Contact me</a></li>
+											<li><a href="/kr/profile.html">제 프로필</a></li>
+											<li><a href="/kr/contact.html">연락처</a></li>
 										</ul>
 									</div>
 								</li>
@@ -70,139 +73,152 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>My Computer Vision projects</h2>
-							<p>Pose detection, Action dectection, V-SLAM, Sensor fusion, Nvidia, CUDA, NeuralNetwork, Web server, C++, Python, Vue.js</p>
+							<h2>컴퓨터 비전 프로젝트</h2>
+							<p>
+								포즈 감지, 액션 감지, V-SLAM, 센서 융합, Nvidia, CUDA, 신경망, 웹 서버, C++, Python, Vue.js
+							</p>
 						</header>
 						<section class="wrapper style5" style="padding-top: 2rem;">
 							<div class="inner">
 
 								<section class="projects">
 									<header>
-										<h2>AI vision server for robotic platform</h2>
-										<p style="margin-bottom: 0.5rem;">Private company - Busan, South Korea</p> 
+										<h2>로봇 플랫폼용 AI 비전 서버</h2>
+										<p style="margin-bottom: 0.5rem;">사기업 - 대한민국 부산</p> 
 										<p style="margin-bottom: 0.5rem;"><i>2023~2024</i></p>
-										<p style="margin-bottom: 0; font-size: 0.75rem;color: darkred;"><i>limited information due to non-disclosure agreement</i></p>
+										<p style="margin-bottom: 0; font-size: 0.75rem;color: darkred;"><i>비공시약정으로 인한 제한된 정보</i></p>
 										<hr />
 									</header>
 									<p style="overflow: auto;">
-										<span class="image left" style="width: 300px;"><img src="assets/images/none.jpg" alt="Robot-Part2" /></span>
+										<span class="image left" style="width: 300px;"><img src="/assets/images/VisionServer-POI.jpg" alt="VisionServer-POI" /></span>
 										<br/>
-										The main goal of the project is to build a standalone web server that can run several vision AI applications.
-										Combined with the developed robotic server, this controller allows Visual-SLAM.<br/>
-										This server should have a small footprint to be embedded in a robotic platform.<br/>
+										프로젝트의 주요 목표는 여러 비전 AI 애플리케이션을 실행할 수 있는 독립형 웹 서버를 구축하는 것입니다.
+										이 컨트롤러는 개발된 로보틱 서버와 결합하여 Visual-SLAM을 허용합니다.<br />
+										이 서버는 로보틱 플랫폼에 내장될 작은 설치 공간을 가져야 합니다.<br />
 										<br />
-										I am the team leader and the solution designer of the project. 
-										I worked on all the parts from server BE and FE and vision algorithm coding.<br />
-										My team was composed of 2 developers and 3 interns.<br />
+										저는 프로젝트의 팀장이자 솔루션 디자이너입니다.
+										서버 BE와 FE, 비전 알고리즘 코딩까지 모든 부분을 작업했습니다.<br />
+										저희 팀은 2명의 개발자와 3명의 인턴으로 구성되었습니다.<br />
 										<br /><br />
-										<b>Keywords:</b>
+										<b>키워드:</b>
 										<br />
 										C++, Python, Vuejs, Visual SLAM, R.Pi5, Jetson Nano, Jetson Nano Orin, CUDA, RGB, RGB-D, VIO, Project manager, Notion
 									</p>
 
-									<button onclick="toggleExtraById()" style="margin-bottom: 20px; align-self: end;">Show more</button>
+									<button onclick="toggleExtraById()" style="margin-bottom: 20px; align-self: end;">더보기</button>
 
 									<div class="extra" style="display: none;">
-										<h4>Hardware points</h4>
+										<h4>하드웨어 포인트</h4>
 										<p>
-											Severals architecture have been tested using controllers such as intel MiniPC (CPU), Nvidia Nano and Nano Orin but also 
-											various camera such as basic usb RGB camera, RGB-D device from Orbbec or RGB-D + IMU.<br/>
-											The server controls also a servo motor to change the camera field of view.
+											Intel MiniPC(CPU), Nvidia Nano 및 Nano Orin과 같은 컨트롤러를 사용하여 여러 아키텍처를 테스트했습니다
+											기본 USB RGB 카메라, Orbbec의 RGB-D 장치 또는 RGB-D + IMU 등 다양한 카메라.<br />
+											서버는 또한 카메라 시야를 변경하기 위해 서보 모터를 제어합니다.
 										</p>
-										<h4>Algorithm points</h4>
+										<h4>알고리즘 포인트</h4>
 										<p>
-											The main goal of the algorithnms was to monitoring multi-people pose and actions. 
-											For each solution, several algorithnms have been developed to best fit the controller (CPU / GPU / Nvidia).<br />
-											Severals algorithnms were developed and we are in discussion with partners / customers for adapting them to answer specific needs:<br/>
-											Multi-person trajectories tracking, dynamic multi-people pose detection, Person Of Interest tracking, multi-people action detection.<br/>
-											Finally, we implemented V-SLAM using Visual Inertial Odometry algorithm and fused it to the previous SLAM solution we developed.
+											알고리즘의 주요 목표는 여러 사람의 포즈와 행동을 모니터링하는 것이었습니다.
+											각 솔루션에 대해 컨트롤러(CPU/GPU/Nvidia)에 가장 적합하도록 여러 알고리즘이 개발되었습니다.<br />
+											몇 가지 알고리즘이 개발되었으며 특정 요구 사항에 맞게 알고리즘을 조정하기 위해 파트너/고객과 논의 중입니다.<br />
+											다인 궤적 추적, 동적 다인 포즈 감지, 관심 대상자 추적, 다인 액션 감지.<br />
+											마지막으로 V-SLAM을 Visual Inertial Odometry 알고리즘을 사용하여 구현하고 이전에 개발한 SLAM 솔루션에 융합했습니다.
 										</p>
-										<h4>Web server points</h4>
+										<h4>웹 서버 포인트</h4>
 										<p>
-											The web server allows any device to connect to the server, run any algorithnms or control the camera position and change any hardware settings.<br/>
-											The different hardware settings (hardware type, serial communication) can be change directly in the UI of the server.<br />
-											The server allows the use of external video feed but also the use of external computing server in case of we need to run heavy algorithm 
-											not compatible with the embedded server.
+											웹 서버는 모든 장치가 서버에 연결하거나 알고리즘을 실행하거나 카메라 위치를 제어하고 하드웨어 설정을 변경할 수 있도록 합니다.<br />
+											서버의 UI에서 다양한 하드웨어 설정(하드웨어 종류, 시리얼 통신)을 직접 변경할 수 있습니다.<br />
+											서버는 외부 비디오 피드를 사용할 수 있지만 무거운 알고리즘을 실행해야 하는 경우 외부 컴퓨팅 서버도 사용할 수 있습니다
+											내장된 서버와 호환되지 않습니다.
 										</p>
+									</div>
+									<div class="gallery">
+										<img src="/assets/images/Vision-BestFeatures.jpg" alt="Image 1" onclick="openModal('/assets/images/Vision-BestFeatures.jpg')">
+										<img src="/assets/images/Vision-PoseEstimation1.jpg" alt="Image 2" onclick="openModal('/assets/images/Vision-PoseEstimation1.jpg')">
 									</div>
 								</section>
 
 								<section class="projects">
 									<header>
-										<h2>Visual Odometry and Visual SLAM</h2>
-										<p style="margin-bottom: 0.5rem;">Private company - Busan, South Korea</p> 
+										<h2>Visual Odometry 및 Visual SLAM</h2>
+										<p style="margin-bottom: 0.5rem;">사기업 - 대한민국 부산</p> 
 										<p style="margin-bottom: 0.5rem;"><i>2023~2024</i></p>
-										<p style="margin-bottom: 0; font-size: 0.75rem;color: darkred;"><i>limited information due to non-disclosure agreement</i></p>
+										<p style="margin-bottom: 0; font-size: 0.75rem;color: darkred;"><i>비공시약정으로 인한 제한된 정보</i></p>
 										<hr />
 									</header>
 									<p style="overflow: auto;">
-										<span class="image left" style="width: 300px;"><img src="assets/images/none.jpg" alt="Robot-Part2" /></span>
+										<span class="image left" style="width: 300px;"><img src="/assets/images/Vision-VSLAM_Nano.jpg" alt="VSLAM_Nano"  /></span>
 										<br/>
-										This project is part of the AI vision server but is more focus on localization and navigation.
-										In this project we are implementing and testing several known solutions for the features detection, features mapping and loop closure.<br />
-										The goal of this project is to understand the existing vision solutions for localization and to create a pipeline to be used for our visual SLAM.
-										Our custom Visual SLAM is still in development, but we also implemented the existing Stella SLAM to be able to first test visual localization and navigation with our robot.
+										이 프로젝트는 AI 비전 서버의 일부이지만 현지화 및 내비게이션에 더 중점을 둡니다.
+										이 프로젝트에서는 기능 감지, 기능 매핑 및 루프 클로저에 대한 몇 가지 알려진 솔루션을 구현하고 테스트하고 있습니다.<br />
+										이 프로젝트의 목표는 현지화를 위한 기존 비전 솔루션을 이해하고 시각적 SLAM에 사용할 파이프라인을 만드는 것입니다.
+										우리의 맞춤형 비주얼 SLAM은 아직 개발 중이지만 기존의 스텔라 SLAM도 구현하여 로봇으로 시각적 위치 파악 및 내비게이션을 먼저 테스트할 수 있도록 했습니다.
 										<br />
-										I helped 3 interns to learn about the visual algorithm, am coding with them the different solution and I am creating the global architecture with another robotic developer.<br />
-										<br /><br />
-										<b>Keywords:</b>
+										저는 3명의 인턴을 도와 시각적 알고리즘에 대해 배웠고, 그들과 다른 솔루션을 코딩하고 있으며, 다른 로봇 개발자와 함께 글로벌 아키텍처를 만들고 있습니다.
+										<br /><br /><br />
+										<b>키워드:</b>
 										<br />
-										C++, Python, Vuejs, Visual SLAM, Jetson Nano Orin, CUDA, RGB, RGB-D, VIO, Features detection, Features mapping, Loop closure, Project manager
+										C++, Python, Vuejs, Visual SLAM, Jetson Nano Orin, CUDA, RGB, RGB-D, VIO, 특징 감지, 특징 매핑, 루프 폐쇄, 프로젝트 매니저
 									</p>
 
-									<button onclick="toggleExtraById()" style="margin-bottom: 20px; align-self: end;">Show more</button>
+									<button onclick="toggleExtraById()" style="margin-bottom: 20px; align-self: end;">더보기</button>
 
 									<div class="extra" style="display: none;">
-										<h4>Hardware points</h4>
+										<h4>하드웨어 포인트</h4>
 										<p>
-											We focus on running the algorithm on Nvida based PC then to port them on the Jetson Nano Orin.
-											We are focusing on using mono-camera, IMU and odometry data from the hub motors, but we also implement a solution with a RGB-D camera.<br/>
+											우리는 Nvida 기반 PC에서 알고리즘을 실행한 다음 Jetson Nano Orin에서 이를 포팅하는 데 중점을 둡니다.
+											허브 모터의 모노 카메라, IMU 및 오도메트리 데이터를 사용하는 데 중점을 두고 있지만 RGB-D 카메라로 솔루션을 구현하기도 합니다.<br />
 										</p>
-										<h4>Algorithm points</h4>
+										<h4>알고리즘 포인트</h4>
 										<p>
-											The different code parts have been implemented in Python then in C++. We are focusing to adapt some of the libraries to use CUDA available in the Nvidia devices.<br />
-											For each solution part, different algorithm have been tested such as  FAST / HARRIS / SIFT / SURF for features dectection and ORB  for features matching, 
-											and we studied the pre-processing of the image using different filtering techniques (recoloring, edge filtering, ...).
-										</p>
+											서로 다른 코드 부분들이 파이썬으로 구현된 후 C++로 구현되었습니다. 엔비디아 디바이스에서 사용 가능한 CUDA를 사용할 수 있도록 라이브러리 중 일부를 조정하는 데 집중하고 있습니다.<br />
+											각 솔루션 파트에 대해 특징 감지를 위한 FAST / HARIS / SIFT / SURF와 특징 일치를 위한 ORB와 같은 다양한 알고리즘을 테스트했으며, 다양한 필터링 기술(리컬러링, 에지 필터링 등)을 사용하여
+											이미지의 전처리를 연구했습니다.
+											</p>
+									</div>
+									<div class="gallery">
+										<img src="/assets/images/Vision-FeaturesMatching1.jpg" alt="Features matching"
+											onclick="openModal('/assets/images/Vision-FeaturesMatching1.jpg')">
+										<img src="/assets/images/Vision-FeaturesTracking.jpg" alt="Features tracking"
+											onclick="openModal('/assets/images/Vision-FeaturesTracking.jpg')">
+										<img src="/assets/images/Vision-LoopClosure1.jpg" alt="Loop closure"
+											onclick="openModal('/assets/images/Vision-LoopClosure1.jpg')">
 									</div>
 								</section>
 								<section class="projects">
 									<header>
-										<h2>Occupancy detection and people counting for Building management system</h2>
-										<p style="margin-bottom: 0.5rem;">TegnyTech - Busan, South Korea</p>
+										<h2>건축물 관리시스템의 입주 감지 및 인원수 집계</h2>
+										<p style="margin-bottom: 0.5rem;">TegnyTech - 부산</p>
 										<p style="margin-bottom: 0.5rem;"><i>2023~2024</i></p>
 										<hr />
 									</header>
 									<p style="overflow: auto;">
-										<span class="image left" style="width: 300px;"><img src="assets/images/none.jpg" alt="Robot-Part2" /></span>
+										<span class="image left" style="width: 300px;"><img src="/assets/images/none.jpg" alt="Robot-Part2" /></span>
 										<br />
-										The main goal of the project is to build a simple server that will received video feeds from different rooms and return their 
-										occupancy states.<br />
-										The occupancy state of a room is important for building control and allows energy savings and to better control the room comfort.
-										Depending on the occupancy state, the lighting condition or even ventilation setpoints can be adjusted.
-										Comparing to traditional solutions using passive infrared, this solution allow to detect a person without a need of any motion.<br />
+										이 프로젝트의 주요 목표는 다른 방에서 비디오 피드를 받고 점유 상태를 반환하는 간단한 서버를 구축하는 것입니다.<br />
+										방의 점유 상태는 건물 제어에 중요하며 에너지 절약을 가능하게 하고 방의 편안함을 더 잘 제어할 수 있습니다.
+										입주 상태에 따라 조명 상태나 환기 설정값까지 조절할 수 있습니다.
+										패시브 적외선을 사용하는 기존 솔루션에 비해 이 솔루션은 움직임 없이도 사람을 감지할 수 있습니다.<br />
 										<br />
-										I am developping this server alone and integrating it in my BEMS solution to propose more solution to my partner company.<br />
+										이 서버를 단독으로 개발하여 BEMS 솔루션에 통합하여 파트너사에 더 많은 솔루션을 제안하고 있습니다.<br />
 										<br /><br />
-										<b>Keywords:</b>
+										<b>키워드:</b>
 										<br />
-										C++, Vuejs, R.Pi5, intel miniPC, Jetson Nano Orin, RGB, Person detection, ModbusTCP, BEMS, Energy savings
+										C++, Vuejs, R.Pi5, intel miniPC, Jetson Nano Orin, RGB, 사람 감지, ModbusTCP, BEMS, 에너지 절감
 									</p>
 								
-									<button onclick="toggleExtraById()" style="margin-bottom: 20px; align-self: end;">Show more</button>
+									<button onclick="toggleExtraById()" style="margin-bottom: 20px; align-self: end;">더보기</button>
 								
 									<div class="extra" style="display: none;">
-										<h4>Hardware points</h4>
+										<h4>하드웨어 포인트</h4>
 										<p>
-											The server can be directly installed in the BEMS computer or run into a standalone controller that is compatible with the number of video feeds.<br />
-											Video feeds can be gather by usb connection or directly from IP cameras.
+											서버는 BEMS 컴퓨터에 직접 설치하거나 비디오 피드 수와 호환되는 독립 실행형 컨트롤러와 연결할 수 있습니다.<br />
+											USB 연결 또는 IP 카메라에서 직접 비디오 피드를 수집할 수 있습니다.
 										</p>
-										<h4>Algorithm points</h4>
+										<h4>알고리즘 포인트</h4>
 										<p>
-											As speed is not important in building management, the algorithms are designed to run with low performance to reduce cost of the product.<br />
-											Severals algorithnms were developed to best fit the type of the controller where the server runs: YOLOV8, DetectNet, NeuralNetwork based.<br />
-											The algorithms were developed using office videos database such as "Edinburgh office monitoring video dataset".<br />
-											Finally, the result of the concurrent occupancy detection on different video feed are stored and can be poll by a Modbus TCP client.
+											빌딩 관리에서 속도가 중요하지 않기 때문에 알고리즘은 낮은 성능으로 실행되어 제품 비용을 절감할 수 있도록 설계되었습니다.<br />
+											서버가 실행되는 컨트롤러의 유형에 가장 적합하도록 여러 알고리즘이 개발되었습니다: YOLOV8, DetectNet, Neural Network based.<br />
+											알고리즘은 "에딘버그 사무실 모니터링 비디오 데이터 세트"와 같은 사무실 비디오 데이터베이스를 사용하여 개발되었습니다.<br />
+											마지막으로, 서로 다른 비디오 피드에 대한 동시 점유 감지 결과가 저장되며 모드버스 TCP 클라이언트에 의해 폴링될 수 있습니다.
 										</p>
 									</div>
 								</section>
@@ -216,7 +232,7 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-							<li><a href="assets/docs/Geoffrey_TEGNY-Resume_2024-Korean.pdf" target="blank"
+							<li><a href="/assets/docs/Geoffrey_TEGNY-Resume_2024-Korean.pdf" target="blank"
 									class="icon solid fa-file-pdf fa-2x"><span class="label">Resume</span></a></li>
 							<li><a href="mailto:geoffrey.tegny@gmail.com" class="icon solid fa-envelope fa-2x"><span
 										class="label">Email</span></a></li>
@@ -244,16 +260,30 @@
 						extra.style.display = "none"
 					}
 				}
+				const openModal = (imageSrc) => {
+						var modal = document.getElementById("imgViewer");
+						var modalImg = document.getElementById("modalImg");
+						modal.style.display = "block";
+						modalImg.src = imageSrc;
+					}
+					const closeModal = () => {
+						var modal = document.getElementById("imgViewer");
+						modal.style.display = "none";
+					}
+					window.onclick = function (event) {
+						var modal = document.getElementById("imgViewer");
+						if (event.target == modal) {
+							modal.style.display = "none";
+						}
+					}
 			</script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
 
 	</body>
 </html>
