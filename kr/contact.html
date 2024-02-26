@@ -6,11 +6,31 @@
 -->
 <html>
 	<head>
-		<title>테니 제프리 - Contact me</title>
+		<title>테니 제프리 - 연락처</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+		<style>
+			.buttons {
+				padding-top: 1rem;
+			}
+		
+			.check {
+				padding-top: 1rem;
+			}
+		
+			.row-elt {
+				width: 50%;
+			}
+		
+			@media screen and (max-width: 736px) {
+				.row-elt {
+					width: 100%;
+					padding-bottom: 0.5rem;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -33,14 +53,14 @@
 											<li>
 												<a href="#">프로젝트</a>
 												<ul>
-													<li><a href="/kr/robotics.html">로봇공학 프로젝트</a></li>
+													<li><a href="/kr/robotics.html">로보틱스 프로젝트</a></li>
 													<li><a href="/kr/vision.html">비전 프로젝트</a></li>
 													<li><a href="/kr/building.html">스마트 빌딩/산업 프로젝트</a></li>
 													<li><a href="/kr/others.html">기타 프로젝트</a></li>
 												</ul>
 									
 											</li>
-											<li><a href="/kr/profile.html">제 프로필</a></li>
+											<li><a href="/kr/profile.html">프로필</a></li>
 											<li><a href="/kr/contact.html">연락처</a></li>
 										</ul>
 									</div>
@@ -56,8 +76,40 @@
 							<p></p>
 						</header>
 						<section class="wrapper style5" style="padding-top: 2rem;">
-							<div class="inner">
-								완성 예정.
+							<div class="inner" style="display: flex; flex-direction: column; align-items: center;">
+								<div style="width: 80vw;">
+									<p>
+										저와 함께 대화를 나누고 싶다면 아래 양식을 이용하세요. 또는 직접 이메일을 보내거나 LinkedIn에서 메시지를 보내셔도 됩니다.
+										업무 및 채용 제안, 파트너십 뿐만 아니라 자원봉사 기회에 대해서도 언제든지 저에게 연락해주세요. 감사합니다. :)
+									</p>
+							
+									<form method="POST" action="https://formspree.io/f/xkndbrjw">
+										<div class="column uniform">
+											<div class="row">
+												<div class="row-elt">
+													<input type="text" name="name" id="name" value="" placeholder="이름" />
+												</div>
+												<div class="row-elt">
+													<input type="email" name="email" id="email" value="" placeholder="이메일 주소" />
+												</div>
+							
+											</div>
+											<div class="check">
+												<input type="checkbox" id="ishuman" name="ishuman" unchecked>
+												<label for="ishuman">로봇이 아닙니다</label>
+											</div>
+											<div>
+												<textarea name="message" id="message" placeholder="메세지를 입력하세요" rows="6"></textarea>
+											</div>
+											<div class="buttons">
+												<ul class="actions">
+													<li><input type="submit" value="메세지 보내기" class="special" /></li>
+													<li><input type="reset" value="모두 삭제" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</div>
 							</div>
 						</section>
 					</article>
