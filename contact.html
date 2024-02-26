@@ -11,6 +11,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.buttons{
+				padding-top: 1rem;
+			}
+			.check{
+				padding-top: 1rem;
+			}
+			.row-elt{
+				width: 50%;
+			}
+			@media screen and (max-width: 736px){
+				.row-elt{
+					width: 100%;
+					padding-bottom: 0.5rem;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -19,26 +36,26 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Geoffrey Tegny</a></h1>
+						<h1><a href="/en/index.html">Geoffrey Tegny</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="index.html">Home</a></li>
+											<li><a href="/en/index.html">Home</a></li>
 											<li>
 												<a href="#">Projects</a>
 												<ul>
-													<li><a href="robotics.html">Robotics projects</a></li>
-													<li><a href="vision.html">Visions projects</a></li>
-													<li><a href="building.html">Smart building / industry projects</a></li>
-													<li><a href="others.html">Others projects</a></li>
+													<li><a href="/en/robotics.html">Robotics projects</a></li>
+													<li><a href="/en/vision.html">Visions projects</a></li>
+													<li><a href="/en/building.html">Smart building / industry projects</a></li>
+													<li><a href="/en/others.html">Others projects</a></li>
 												</ul>
 							
 											</li>
-											<li><a href="profile.html">My profile</a></li>
-											<li><a href="contact.html">Contact me</a></li>
+											<li><a href="/en/profile.html">My profile</a></li>
+											<li><a href="/en/contact.html">Contact me</a></li>
 										</ul>
 									</div>
 								</li>
@@ -53,8 +70,38 @@
 							<p></p>
 						</header>
 						<section class="wrapper style5" style="padding-top: 2rem;">
-							<div class="inner">
-								to be completed.
+							<div class="inner" style="display: flex; flex-direction: column; align-items: center;">
+								<div style="width: 80vw;">
+									<p>To get the conversation started, use the form below (or, if you prefer, send me an email or message me on
+										LinkedIn). Feel free to contact me about career or partnerships opportunities, but also volunteer opportunities!</p>
+
+									<form method="POST" action="https://formspree.io/f/xkndbrjw">
+										<div class="column uniform">
+											<div class="row">
+												<div class="row-elt">
+													<input type="text" name="name" id="name" value="" placeholder="Name" />
+												</div>
+												<div class="row-elt">
+													<input type="email" name="email" id="email" value="" placeholder="Email address" />
+												</div>
+
+											</div>
+											<div class="check">
+												<input type="checkbox" id="ishuman" name="ishuman" unchecked>
+												<label for="ishuman">Not a robot</label>
+											</div>
+											<div>
+												<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+											<div class="buttons">
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" class="special" /></li>
+													<li><input type="reset" value="Reset" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</div>
 							</div>
 						</section>
 					</article>
